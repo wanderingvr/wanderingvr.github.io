@@ -1,0 +1,143 @@
+<div class="root">
+  <div class="container">
+    
+    <div class="earth">
+    
+      <div class="land">
+      </div>
+
+      <div class="land">
+      </div>
+    
+      <div class="glass">
+        <div class="cardboard">
+        
+         <div class="half">
+            <div class="eye">
+              <div class="dot"></div>
+            </div>
+         </div>
+         
+         <div class="half">
+           <div class="eye">
+             <div class="dot"></div>
+           </div>
+         </div>
+         
+         <div class="nose">
+         </div>
+        
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<style>
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: whitesmoke;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  position: relative;
+  padding-bottom: 50%;
+  width: 50%;
+}
+
+.earth {
+  position: absolute;
+  overflow: hidden;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  background-color: #28b5f4;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.glass {
+  position: relative;
+  padding-bottom: 40%;
+  width: 70%;
+}
+
+.cardboard {
+  position: absolute;
+  overflow: hidden;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: #ffab40;
+  border-radius: 5px;
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+  z-index: 99999;
+}
+
+.half {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.eye {
+  position: relative;
+  padding-bottom: 45%;
+  width: 45%;
+}
+
+.dot {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+  background-color: #c77c02;
+}
+
+.nose {
+  position: absolute;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+  background-color: #c77c02;
+  bottom: -55%;
+  padding-bottom: 50%;
+  margin-left: -25px;
+  left: 50%;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.land {
+  position: absolute;
+  background-color: #2e7d32;
+  border-radius: 50%;
+  z-index: 999;
+  height: 100%;
+  width: 100%;
+}
+
+.land:nth-child(1) {
+  bottom: 65%;
+  left: 65%;
+}
+
+.land:nth-child(2) {
+  bottom: 45%;
+  right: 85%;
+}
+</style>
